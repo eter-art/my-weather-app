@@ -1,0 +1,143 @@
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: blueviolet;
+}
+.all {
+  text-align: center;
+}
+.temperature {
+  color: blue;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.units {
+  position: relative;
+  top: -20px;
+  font-size: 15px;
+}
+.characters {
+  position: relative;
+  left: 450px;
+  bottom: 100px;
+  font-size: 15px;
+  color: blueviolet;
+}
+li {
+  list-style: none;
+}
+.all i {
+  color: yellow;
+  font-size: 30px;
+}
+
+.weather-app {
+  font-family: "Robo  to Mono", monospace;
+  border: 1px solid gray;
+  padding: 60px 80px;
+  margin: 80px auto;
+  max-width: 900px;
+  border-radius: 40px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.search-form {
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+  margin-bottom: 5px;
+}
+.search {
+  decoration: blueviolet;
+}
+button {
+  position: relative;
+  bottom: 38px;
+  margin-bottom: 5px;
+  left: 500px;
+}
+.first {
+  margin: 0 0 10 px;
+  padding: 0;
+}
+
+.first {
+  margin-top: 15px;
+  color: blueviolet;
+  font-size: 15px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
+
+p {
+  text-align: center;
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+  color: blueviolet;
+}
+.days {
+  position: relative;
+  right: 22px;
+  margin-bottom: 50px;
+}
+.one i {
+  color: blue;
+  font-size: 30px;
+}
+.one {
+  position: relative;
+  top: 60px;
+  left: 30px;
+  border: 4px solid violet;
+  border-radius: 8px;
+}
+
+.two i {
+  color: yellow;
+  font-size: 30px;
+}
+.two {
+  position: relative;
+  top: 60px;
+  left: 30px;
+  border: 4px solid violet;
+  border-radius: 8px;
+}
+.three i {
+  color: blue;
+  font-size: 30px;
+}
+.three {
+  position: relative;
+  top: 60px;
+  left: 30px;
+  border: 4px solid violet;
+  border-radius: 8px;
+}
+.four i {
+  color: darkgrey;
+  font-size: 30px;
+}
+.four {
+  position: relative;
+  top: 60px;
+  left: 30px;
+  border: 4px solid violet;
+  border-radius: 8px;
+}
+.five i {
+  color: blue;
+  font-size: 30px;
+}
+.five {
+  position: relative;
+  top: 60px;
+  left: 30px;
+  border: 4px solid violet;
+  border-radius: 8px;
+}
