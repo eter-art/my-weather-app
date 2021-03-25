@@ -23,12 +23,15 @@ let days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
   document.querySelector("#Wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
    let iconElement = document.querySelector("#icon");
-   iconElement.setAttribute(
+    iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
- }
+
+ celsiusTemperature = response.data.main.temp;
+ temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  }
  
  
 
@@ -36,6 +39,7 @@ let days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
   let apiKey= "c6e720f1cbcd8f1e302c88b67fb9a8fa"; 
  let apiUrl= `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get (apiUrl) .then(displayWeatherCondition);
+
   }
 
  function handleSubmit (event) {
@@ -61,13 +65,18 @@ function getCurrentLocation(event){
  function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+ let fahrenheitTemperature=  (celsiusTemperature * 9) / 5 + 32;
+ temperatureElement.innerHTML=Math.round(fahrenheitTemperature);
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19
+ temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let dateElement = document.querySelector("#date");
@@ -75,17 +84,17 @@ let currentTime = new Date ();
 dateElement.innerHTML= formatDate (currentTime);
 
 
-
-
-
-
-
+let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
+
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+
+
 
 let searchForm=document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
