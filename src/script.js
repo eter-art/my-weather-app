@@ -7,8 +7,7 @@ let days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
   return ` ${day} ${formatHours(timestamp)}`;
  } 
 
-
- function formatHours(timestamp){
+function formatHours(timestamp){
   let date = new Date (timestamp);
 
 let hours = date.getHours();
