@@ -4,6 +4,10 @@ h1 {
   font-size: 25px;
   color: blueviolet;
 }
+h2 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
 .all {
   text-align: center;
 }
@@ -75,18 +79,6 @@ button {
   list-style: none;
 }
 
-p {
-  text-align: center;
-  position: relative;
-  top: 30px;
-  font-size: 20px;
-  color: blueviolet;
-}
-.days {
-  position: relative;
-  right: 22px;
-  margin-bottom: 50px;
-}
 .one i {
   color: blue;
   font-size: 30px;
@@ -95,54 +87,8 @@ p {
   position: relative;
   top: 60px;
   left: 30px;
-  border: 4px solid violet;
-  border-radius: 8px;
 }
 
-.two i {
-  color: yellow;
-  font-size: 30px;
-}
-.two {
-  position: relative;
-  top: 60px;
-  left: 30px;
-  border: 4px solid violet;
-  border-radius: 8px;
-}
-.three i {
-  color: blue;
-  font-size: 30px;
-}
-.three {
-  position: relative;
-  top: 60px;
-  left: 30px;
-  border: 4px solid violet;
-  border-radius: 8px;
-}
-.four i {
-  color: darkgrey;
-  font-size: 30px;
-}
-.four {
-  position: relative;
-  top: 60px;
-  left: 30px;
-  border: 4px solid violet;
-  border-radius: 8px;
-}
-.five i {
-  color: blue;
-  font-size: 30px;
-}
-.five {
-  position: relative;
-  top: 60px;
-  left: 30px;
-  border: 4px solid violet;
-  border-radius: 8px;
-}
 .source-code {
   position: relative;
   left: 250px;
