@@ -22,6 +22,12 @@ let days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sat
  document.querySelector("#humidity").innerHTML=response.data.main.humidity;
   document.querySelector("#Wind").innerHTML = Math.round(response.data.wind.speed);
   document.querySelector("#description").innerHTML = response.data.weather[0].main;
+   let iconElement = document.querySelector("#icon");
+   iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
  }
  
  
